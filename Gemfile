@@ -22,7 +22,7 @@ gem 'turbolinks', '5.0.0'
 gem 'jbuilder', '2.5.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
-# Use ActiveModel has_secure_password
+# Use ActiveModel has_secure_passwords
 # gem 'bcrypt', '3.1.7'
 
 # Use Capistrano for deployment
@@ -30,6 +30,9 @@ gem 'jbuilder', '2.5.0'
 
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass' , '3.3.7'
+
+# Use Font Awesome sass gem for adding icons
+gem 'font-awesome-sass', '4.6.2'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
