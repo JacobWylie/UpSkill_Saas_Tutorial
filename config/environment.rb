@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
   :address        => ENV['MAILGUN_SMTP_SERVER'],
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  :domain         => ENV'sleepy-depths-30114.herokuapp.com',
-  :authentication => ENV:plain,
+  :domain         => 'sleepy-depths-30114.herokuapp.com',
+  :authentication => :plain,
 }
 ActionMailer::Base.delivery_method = :smtp
