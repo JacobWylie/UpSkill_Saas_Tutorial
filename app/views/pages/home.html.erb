@@ -10,18 +10,19 @@
       <div class="col-md-6">
         <div class="well">
           <h2 class="well-font text-center">Basic Membership</h2>
+          <h4 class="well-font text-center">Free</h4>
           <hr/>
   
-          <ol class="list-unstyled well-font text-center">
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
+          <ol class="list-unstyled well-font">
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Basic access to our Social Media Platform</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Lorem ipsum dolor sit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Consectetur adipiscing elit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Bibendum egestas nibh</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Et condimentum</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Donec porta massa dui</li>
           </ol>
           <br/>
-          <%= link_to "Sign up with Basic", "#", class: "btn btn-info btn-lg btn-block" %>
+          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
         </div>  
       </div>
       
@@ -29,17 +30,18 @@
       <div class="col-md-6">
         <div class="well">
           <h2 class="well-font text-center">Pro Membership</h2>
+          <h4 class="well-font text-center">Only $10/month</h4>
           <hr/>
-          <ol class="list-unstyled well-font text-center">
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
-            <li class="sign-up-list"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Placeholder Text</li>
+          <ol class="list-unstyled well-font">
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Full access to our Social Media Platform</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Lorem ipsum dolor sit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Consectetur adipiscing elit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Bibendum egestas nibh</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Et condimentum</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Donec porta massa dui</li>
           </ol>
           <br/>
-          <%= link_to "Sign up for a Pro Account!", "#", class: "btn btn-success btn-lg btn-block" %>
+          <%= link_to "Sign up for a Pro Account!", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
         </div>
       </div>
     </div>
