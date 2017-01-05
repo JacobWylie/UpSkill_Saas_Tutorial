@@ -20,7 +20,7 @@
 @import 'font-awesome';
 
 // Typography Styles
-h1, h2, h3, h4 {
+h1, h2, h3, h4, ul {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -32,10 +32,24 @@ h1, h2, h3, h4 {
   background: -webkit-linear-gradient(left,  rgba(0,67,148,1) 0%,rgba(0,94,176,1) 50%,rgba(0,138,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  rgba(0,67,148,1) 0%,rgba(0,94,176,1) 50%,rgba(0,138,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004394', endColorstr='#008af4',GradientType=1 ); /* IE6-9 */
+  padding-top: 10px;
 }        
 
-h1 {
-  font-size: 50px;
+.home-background{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004394+0,005eb0+50,008af4+100 */
+  background: rgb(0,67,148); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(0,67,148,1) 0%, rgba(0,94,176,1) 50%, rgba(0,138,244,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(0,67,148,1) 0%,rgba(0,94,176,1) 50%,rgba(0,138,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(0,67,148,1) 0%,rgba(0,94,176,1) 50%,rgba(0,138,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004394', endColorstr='#008af4',GradientType=1 ); /* IE6-9 */
+}        
+
+.welcome-callout {
+  font-size: 42px;
+}
+
+.sub-welcome-callout {
+  font-size: 30px;
 }
 
 // Nav Styles
@@ -78,12 +92,17 @@ h1 {
 .home-callout {
   color: white;
   margin-top: -20px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 75px;
 }
 
 .alert-notice {
   display: none;
+}
+
+.home-signup-links {
+  margin-top: -10px;
+  padding-bottom: 100px;
 }
 
 
@@ -94,5 +113,15 @@ h1 {
 
 .well-font {
   color: white;
+}
+
+.sign-up-list {
+  font-size: 21px;
+  padding: 5px;
+}
+
+// Sign Up
+.sign-up {
+  padding-top: 20px;
 }
  
