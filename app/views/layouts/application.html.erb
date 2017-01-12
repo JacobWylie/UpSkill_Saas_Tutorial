@@ -3,7 +3,7 @@
   <head>
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -24,8 +24,15 @@
           <% end %>
         </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
+        <div class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
+          <% else %>  
+            <!--<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success btn-sm navbar-btn" %>-->
+            <%= link_to "Log In", new_user_session_path, class: "btn btn-success btn-sm navbar-btn" %>
+          <% end %>
+        </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "About", about_path %></li>
           <li><%= link_to "Contact Us", new_contact_path %></li>
         </ul>

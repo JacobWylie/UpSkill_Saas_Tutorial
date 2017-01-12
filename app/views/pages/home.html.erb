@@ -1,4 +1,49 @@
-<div class="home-callout text-center container-fluid">
-  <h1>Welcome to DevMatch.</h1>
-  <h3>A membership site where entrepeneurs can meet developers.</h3>
+<div class= "background">
+  <div class="text-center container-fluid">
+    <h1 class="welcome-callout"><i class="fa fa-comments-o"></i>DevMatch</h1>
+    <h3 class="sub-welcome-callout">Where Entrepeneurs and Developers Connect</h3>
+  </div>
+  <div class="container home-signup-links">
+    <div class="row">
+      
+      <!--Basic membership link-->
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="well-font text-center">Basic Membership</h2>
+          <h4 class="well-font text-center">Free</h4>
+          <hr/>
+  
+          <ol class="list-unstyled well-font">
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Basic access</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Lorem ipsum dolor sit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Consectetur adipiscing elit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Bibendum egestas nibh</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Et condimentum</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> &nbsp&nbsp&nbsp Donec porta massa dui</li>
+          </ol>
+          <br/>
+          <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+        </div>  
+      </div>
+      
+      <!--Pro membership link-->
+      <div class="col-md-6">
+        <div class="well">
+          <h2 class="well-font text-center">Pro Membership</h2>
+          <h4 class="well-font text-center">Only $10/month</h4>
+          <hr/>
+          <ol class="list-unstyled well-font">
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Premium Social Media Acess</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Lorem ipsum dolor sit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Consectetur adipiscing elit</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Bibendum egestas nibh</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Et condimentum</li>
+            <li class="sign-up-list">&nbsp&nbsp&nbsp<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> &nbsp&nbsp&nbsp Donec porta massa dui</li>
+          </ol>
+          <br/>
+          <%= link_to "Sign up for a Pro Account!", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
