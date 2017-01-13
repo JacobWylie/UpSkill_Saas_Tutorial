@@ -63,6 +63,18 @@ h1, h2, h3, h4, ul {
   padding-bottom: 30px;
 }
 
+.sign-up-head {
+  @extend .well-font;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.sign-up-info {
+  @extend .well-font;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
 // Nav Styles
 .navbar {
   margin: 0px;
