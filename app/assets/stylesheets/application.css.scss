@@ -54,7 +54,7 @@ h1, h2, h3, h4, ul {
 .welcome-callout {
   @extend .well-font;
   font-size: 65px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .sub-welcome-callout {
@@ -123,8 +123,16 @@ h1, h2, h3, h4, ul {
 //   padding-bottom: 50px;
 // }
 
-.alert-notice {
-  display: none;
+.flash-container {
+  position: absolute;
+  width: 100%;
+}
+
+.alert-notice, .alert-alert, .alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
 }
 
 .home-signup-links {
